@@ -1,0 +1,556 @@
+.comPlainTextContentEditable {
+  -webkit-user-modify: read-write-plaintext-only;
+  cursor: text;
+}
+
+.comPlainTextContentEditable--has-placeholder::before {
+  content: attr(placeholder);
+  opacity: 0.5;
+  color: inherit;
+  cursor: text;
+}
+
+.ReactTrelloDragClass {
+  transform: rotate(3deg);
+}
+.ReactTrelloDragLaneClass {
+  transform: rotate(3deg);
+}
+
+.IconOverflowMenuHorizontal:before {
+  content: "\\E91F";
+}
+.IconLg,
+.IconSm {
+  color: var(--kanban-color-1);
+}
+.IconLg {
+  height: 32px;
+  font-size: 16px;
+  line-height: 32px;
+  width: 32px;
+}
+
+.PopoverContainer {
+  position: absolute;
+  right: 10px;
+  align-items: baseline;
+  flex-flow: column nowrap;
+}
+
+.PopoverContent {
+  visibility: hidden;
+  margin-top: -5px;
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease 0ms;
+  border-radius: 3px;
+  min-width: 7em;
+  flex-flow: column nowrap;
+  background-color: var(--kanban-color-2);
+  color: var(--kanban-color-3);
+  padding: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  .active {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 100ms;
+  }
+  ::before {
+    visibility: hidden;
+  }
+  a {
+    color: var(--kanban-color-4);
+    padding: 0.5em 1em;
+    margin: 0;
+    text-decoration: none;
+    :hover {
+      background-color:var(--kanban-color-5) !important;
+      color: var(--kanban-color-6);
+    }
+  }
+}
+
+.BoardWrapper {
+  background-color:var(--kanban-color-7);
+  overflow-y: hidden;
+  padding: 5px;
+  color: var(--kanban-color-8);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.Header {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.Section {
+  background-color: var(--kanban-color-9);
+  border-radius: 3px;
+  margin: 5px 5px;
+  position: relative;
+  padding: 10px;
+  display: inline-flex;
+  height: auto;
+  max-height: 90%;
+  flex-direction: column;
+}
+
+.LaneHeader {
+  margin-bottom: 0px;
+  .editLaneTitle {
+    padding: 0px;
+    line-height: 30px;
+  }
+  .editLaneTitle {
+    padding: 0px 5px;
+  }
+}
+
+.LaneFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 10px;
+}
+
+.ScrollableLane {
+  flex: 1;
+  overflow-y: auto;
+  min-width: 250px;
+  overflow-x: hidden;
+  align-self: center;
+  max-height: 90vh;
+  margin-top: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Title {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  cursor: "grab";
+  width: 70%;
+}
+.RightContent {
+  width: 38%;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 13px;
+}
+
+.CardWrapper {
+  border-radius: 3px;
+  border-bottom: 1px solid #ccc;
+  background-color:var(--kanban-color-2);
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  max-width: 250px;
+  margin-bottom: 7px;
+  min-width: 230px;
+}
+
+.MovableCardWrapper {
+  :hover {
+    background-color: #f0f0f0;
+    color: var(--kanban-color-3);
+  }
+}
+
+.CardHeader {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
+  color: var(--kanban-color-3);
+}
+
+.CardTitle {
+  font-size: 14px;
+}
+
+.CardRightContent {
+  font-size: 10px;
+}
+.Detail {
+  font-size: 12px;
+  color: var(--kanban-color-10);
+  white-space: pre-wrap;
+}
+.Footer {
+  border-top: 1px solid #eee;
+  padding-top: 6px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.TagSpan {
+  padding: 2px 3px;
+  border-radius: 3px;
+  margin: 2px 5px;
+  font-size: 70%;
+}
+.AddCardLink {
+  border-radius: 0 0 3px 3px;
+  color: var(--kanban-color-10);
+  display: block;
+  padding: 5px 2px;
+  margin-top: 10px;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+
+  :hover {
+    //background-color: #cdd2d4;
+    color: #4d4d4d;
+    text-decoration: underline;
+  }
+}
+
+.LaneTitle {
+  font-size: 15px;
+  width: 268px;
+  height: auto;
+}
+.LaneSection {
+  background-color: var(--kanban-color-11);
+  border-radius: 3px;
+  margin: 5px;
+  position: relative;
+  padding: 5px;
+  display: inline-flex;
+  height: auto;
+  flex-direction: column;
+}
+.NewLaneSection {
+  width: 200px;
+}
+
+.NewLaneButtons {
+  margin-top: 10px;
+}
+
+.CardForm {
+  background-color: var(--kanban-color-9);
+}
+.InlineInput {
+  overflow-x: hidden; /* for Firefox (issue #5) */
+  word-wrap: break-word;
+  min-height: 18px;
+  max-height: 112px; /* optional, but recommended */
+  resize: none;
+  width: 100%;
+  height: 18px;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  background-color: transparent;
+  box-shadow: none;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 0;
+  padding: 0 8px;
+  outline: 0;
+
+  :focus {
+    box-shadow: inset 0 0 0 2px var(--kanban-color-12);
+  }
+  :focus {
+    background-color: var(--kanban-color-2);
+  }
+}
+
+// Element
+
+.DeleteWrapper {
+  text-align: center;
+  position: absolute;
+  top: -1px;
+  right: 2px;
+  cursor: pointer;
+}
+.GenDelButton {
+  transition: all 0.5s ease;
+  display: inline-block;
+  border: none;
+  font-size: 15px;
+  height: 15px;
+  padding: 0;
+  margin-top: 5px;
+  text-align: center;
+  width: 15px;
+  background: inherit;
+  cursor: pointer;
+}
+
+.DelButton {
+  transition: all 0.5s ease;
+  display: inline-block;
+  border: none;
+  font-size: 8px;
+  height: 15px;
+  line-height: 1px;
+  margin: 0 0 8px;
+  padding: 0;
+  text-align: center;
+  width: 15px;
+  background: inherit;
+  cursor: pointer;
+  opacity: 0;
+  :hover  {
+    opacity: 1;
+  }
+}
+
+.MenuButton {
+  transition: all 0.5s ease;
+  display: inline-block;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  height: 15px;
+  line-height: 1px;
+  margin: 0 0 8px;
+  padding: 0;
+  text-align: center;
+  width: 15px;
+  background: inherit;
+  cursor: pointer;
+}
+
+.LaneMenuHeader {
+  position: relative;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.LaneMenuContent {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0 12px 12px;
+}
+
+.LaneMenuItem {
+  cursor: pointer;
+  display: block;
+  font-weight: 700;
+  padding: 6px 12px;
+  position: relative;
+  margin: 0 -12px;
+  text-decoration: none;
+
+  :hover {
+    background-color: var(--kanban-color-7);
+    color: var(--kanban-color-2);
+  }
+}
+.LaneMenuTitle {
+  box-sizing: border-box;
+  color: var(--kanban-color-13);
+  display: block;
+  line-height: 30px;
+  border-bottom: 1px solid rgba(9, 45, 66, 0.13);
+  margin: 0 6px;
+  overflow: hidden;
+  padding: 0 32px;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 1;
+}
+.DeleteIcon {
+  position: relative;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  opacity: 1;
+  overflow: hidden;
+  border: 1px solid var(--kanban-color-14);
+  border-radius: 50%;
+  padding: 4px;
+  background-color: var(--kanban-color-14);
+
+  :hover  {
+    opacity: 1;
+  }
+
+  :hover::before,
+  :hover::after {
+    background: red;
+  }
+
+  :before,
+  :after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60%;
+    top: 45%;
+    left: 20%;
+    background: var(--kanban-color-2);
+    border-radius: 5px;
+  }
+
+  :before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  :after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+.ExpandCollapseBase {
+  width: 36px;
+  margin: 0 auto;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+
+.CollapseBtn {
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 7px solid var(--kanban-color-4);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-radius: 6px;
+  }
+  :after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    border-bottom: 3px solid var(--kanban-color-9);
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+  }
+}
+
+.ExpandBtn {
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 7px solid var(--kanban-color-4);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-radius: 6px;
+  }
+  :after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    border-top: 3px solid var(--kanban-color-9);
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+  }
+}
+
+.AddButton {
+  background: var(--kanban-color-15);
+  color: var(--kanban-color-2);
+  transition: background 0.3s ease;
+  min-height: 32px;
+  padding: 4px 16px;
+  vertical-align: top;
+  margin-top: 0;
+  margin-right: 8px;
+  font-weight: bold;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.CancelButton {
+  background: #999999;
+  color: var(--kanban-color-2);
+  transition: background 0.3s ease;
+  min-height: 32px;
+  padding: 4px 16px;
+  vertical-align: top;
+  margin-top: 0;
+  font-weight: bold;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.AddLaneLink {
+  background: var(--kanban-color-11);
+  border: none;
+  color: var(--kanban-color-2);
+  transition: background 0.3s ease;
+  min-height: 32px;
+  padding: 4px 16px;
+  vertical-align: top;
+  margin-top: 0;
+  margin-right: 0px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+// Loaders
+.LoaderDiv {
+  text-align: center;
+  margin: 15px 0;
+}
+.LoadingBar {
+  display: inline-block;
+  margin: 0 2px;
+  width: 4px;
+  height: 18px;
+  border-radius: 4px;
+  animation: 1s ease-in-out infinite;
+  background-color: #777;
+
+  :nth-child(1) {
+    animation-delay: 0.0001s;
+  }
+  :nth-child(2) {
+    animation-delay: 0.09s;
+  }
+  :nth-child(3) {
+    animation-delay: 0.18s;
+  }
+  :nth-child(4) {
+    animation-delay: 0.27s;
+  }
+}
+
+
+.col {
+  color: blue;
+}
+
+.disc{
+  color: rgb(255, 0, 0);
+}
