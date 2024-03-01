@@ -26,11 +26,8 @@ const tasksList = [
   { _id: 11, title: "Eleventh Task", description: "2 Gallons of milk at the Deli store", status: "ready" },
   { _id: 12, title: "twelfth Task", description: "2 Gallons of milk at the Deli store", status: "completed" },
   { _id: 13, title: "thirteen Task", description: "2 Gallons of milk at the Deli store", status: "completed" },
-  { _id: 14, title: "fourteen Task", description: "2 Gallons of milk at the Deli store", status: "completed" },
-  { _id: 15, title: "fifteen Task", description: "2 Gallons of milk at the Deli store", status: "completed" },
-  { _id: 16, title: "sixteen Task", description: "2 Gallons of milk at the Deli store", status: "completed" },
-  { _id: 17, title: "seventeen Task", description: "2 Gallons of milk at the Deli store", status: "completed" },
-  { _id: 18, title: "eighteen Task", description: "2 Gallons of milk at the Deli store", status: "completed" }
+  { _id: 14, title: "fourteen Task", description: "2 Gallons of milk at the Deli store", status: "completed" }
+ 
 
 ];
 
